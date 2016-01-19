@@ -1,0 +1,26 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+pi = 3.14
+x = np.arange(0, 6*pi, 0.05)
+
+     
+    
+y1 = np.cos (x) 
+y2 = np.sin (x)
+
+
+line, = plt.plot(x,y1, 'r', label ="Cosine")
+dashes = [10, 5, 100, 5] 
+line.set_dashes(dashes)
+line2, = plt.plot(x,y2,'k',label="Sine")
+plt.title('Graph showing comparison of sine and cosine')
+
+plt.legend(handles=[line, line2])
+
+plt.show()
+
+# Howard ID: @02733960
+# Name: Shamar Christian
+# Date: 1/18/2016
